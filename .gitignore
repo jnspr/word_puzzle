@@ -1,0 +1,8 @@
+# Packages and their metadata
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# Generated files
+/static/index.js
+/static/index.js.map
