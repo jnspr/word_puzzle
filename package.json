@@ -1,0 +1,19 @@
+{
+    "name": "word_puzzle",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "20.11.23",
+        "@types/express": "4.17.21",
+        "@types/express-ws": "3.0.4",
+        "typescript": "5.3.3",
+        "esbuild": "0.20.1",
+        "tsx": "4.7.1",
+        "express": "4.18.3",
+        "express-ws": "5.0.2"
+    },
+    "scripts": {
+        "server": "npx tsx server/index.ts",
+        "client": "npx esbuild --bundle --minify --outfile=static/index.js --platform=browser client/index.ts",
+        "client_watch": "npx esbuild --bundle --minify --outfile=static/index.js --platform=browser --sourcemap --watch --keep-names client/index.ts"
+    }
+}
